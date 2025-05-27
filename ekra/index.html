@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Online Shopping Centre</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>New Bangladesh SM</h1>
+  <nav aria-label="Primary navigation">
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+   
+  </nav>
+   <a id="cart-toggle" aria-haspopup="true" aria-controls="cart" aria-expanded="false" href="javascript:void(0)">Cart (<span id="cart-count">0</span>)</a>
+</header>
+
+<section class="hero" aria-label="Shopping centre introduction">
+  Welcome to ShopEase - Your One-Stop Online Shopping Centre!
+</section>
+
+<main>
+  <section class="filters" aria-label="Product category filters">
+    <button class="active" data-category="all">All</button>
+    <button data-category="clothing">Clothing</button>
+    <button data-category="electronics">Electronics</button>
+    <button data-category="perfume">perfume</button>
+    <button data-category="shoes">shoes</button>
+  </section>
+
+  <section id="products" class="product-grid" aria-live="polite" aria-label="Product listing">
+    <article class="product-card" data-category="clothing" data-id="1" data-name="Black T-shirt" data-price="59.99">
+      <img src="t shart.jpg"/>
+      <div class="product-info">
+        <h3>Black T-shirt</h3>
+        <div class="price-and-cart">
+          <span class="price">$59.99</span>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </article>
+    <article class="product-card" data-category="electronics" data-id="2" data-name="Wireless Headphones" data-price="89.99">
+      <img src="headphones.jpg"  >
+      <div class="product-info">
+        <h3>Wireless Headphones</h3>
+        <div class="price-and-cart">
+          <span class="price">$89.99</span>
+          <button class="add-to-cart-btn" >Add to Cart</button>
+        </div>
+      </div>
+    </article>
+    <article class="product-card" data-category="perfume" data-id="3" data-name="perfume" data-price="14.99">
+      <img src="perfume.jpg" />
+      <div class="product-info">
+        <h3>perfume</h3>
+        <div class="price-and-cart">
+          <span class="price">$14.99</span>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </article>
+    <article class="product-card" data-category="shoes" data-id="4" data-name="Formal shoes" data-price="120">
+      <img src="shoes.jpg" />
+      <div class="product-info">
+        <h3>Formal shoes</h3>
+        <div class="price-and-cart">
+          <span class="price">$120.00</span>
+          <button class="add-to-cart-btn" >Add to Cart</button>
+        </div>
+      </div>
+    </article>
+    <article class="product-card" data-category="clothing" data-id="5" data-name="Men's Casual Shirt" data-price="24.50">
+      <img src="casual shart.jpg" />
+      <div class="product-info">
+        <h3>Men's Casual Shirt</h3>
+        <div class="price-and-cart">
+          <span class="price">$24.50</span>
+          <button class="add-to-cart-btn">Add to Cart </button>
+        </div>
+      </div>
+    </article>
+    <article class="product-card" data-category="electronics" data-id="6" data-name="Smartwatch Series 5" data-price="199.99">
+      <img src="smartwatch.jpg" alt="Smartwatch Series 5" />
+      <div class="product-info">
+        <h3>Smartwatch Series 5</h3>
+        <div class="price-and-cart">
+          <span class="price">$199.99</span>
+          <button class="add-to-cart-btn" >Add to Cart</button>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>
+
+<aside id="cart" class="cart" aria-label="Shopping cart" aria-hidden="true" hidden>
+  <h2>Your Cart</h2>
+  <ul class="cart-items" id="cart-items">
+
+  </ul>
+  <p class="cart-total" id="cart-total">Total: $0.00</p>
+</aside>
+
+<script src="js.js"></script>
+
+</body>
+</html>
